@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejemplo de ejercicio</title>
+
+		<script src="js/jquery-1.10.2.min.js"></script>
+
+		<!--<link rel="stylesheet" href="css/principal.css">-->
+		<link rel="stylesheet" href="css/animacion.css">
+
+
+		<script type="text/javascript">
+
+			//Estoy indicando que quiero esperar a que todo el documento esté cargado para poder trabajar con mis funciones.
+			$(document).ready(function()
+
+			{
+
+			// Oculto el elemento seleccionado (añado la propiedad display con valor none)
+			$('#azul').hide();
+
+			// Muestro el elemento seleccionado (elimino la propiedad display con valor none que estuviera presente)
+			$('#azul').show();
+
+			// Oculto el elemento seleccionado con una pequeña animación de deslizamiento.
+			$('#azul').slideUp();
+
+			// Animo la altura del elemento seleccionado desde el valor que tuviera definido inicialmente hasta 600px. La duración durará 2000ms.
+
+			$('#azul').animate({
+					
+					height: '600px'
+
+					}, 
+					2000
+					);
+
+				});
+	
+
+		</script>
+
+
+	</head>
+
+	<body>
+	<h1>Hola usuarios de video2brain</h1>
+	 <div id="azul">
+           
+        </div>
+        <div id="rojo">
+          
+        </div>
+        <div id="verde">
+           
+        </div>
+        <div id="amarillo">
+           
+        </div>
+	</body>
+</html>

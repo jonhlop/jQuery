@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejemplo de ejercicio</title>
+
+		<script src="js/jquery-1.10.2.min.js"></script>
+
+		<link rel="stylesheet" href="css/principal.css">
+
+
+		<script type="text/javascript">
+
+			//Estoy indicando que quiero esperar a que todo el documento esté cargado para poder trabajar con mis funciones.
+			$(document).ready(function()
+
+			{
+
+			// Cuando haga clic encima del elemento con ID cambiaColor, realiza la siguiente función. También podría usarse el método de manera
+			// diferentes de la siguiente forma: $('#cambiaColor').click(function(){acciones});
+
+			$('#cambiaColor').on('click', function(){
+
+
+				// Cambiar el color de fondo con una propiedad CSS al elemento con ID azul.
+				$('#azul').css('background-color','#e67e22');
+
+			});
+
+
+			// Cuando pase con el cursor por encima del elemento con ID cambiaColor, realiza la siguiente función
+			$('#cambiaColor').on('mouseover', function(){
+
+				// Cambiar el color de fondo con una propiedad CSS al elemento con ID azul.
+				$('#azul').css('background-color','#e67e22');
+
+				// Incluye código HTML dentro del elemento con ID azul.
+				$('#azul').html('<p>Ahora soy de color naranja</p>');
+
+				//Saca una ventana de alerta con el texto indicado.
+				window.alert("Cambiaste el color");
+
+			});
+
+
+			});
+	
+
+		</script>
+
+
+	</head>
+
+	<body>
+	<h1>Hola usuarios de video2brain</h1>
+
+	<div id="azul">
+     	<p>¡Hola! Soy una caja de color azul.</p>
+    </div>
+
+    <div id="rojo">
+        <p>¡Hola! Soy una caja de color rojo.</p>
+    </div>
+
+    <div id="verde">
+        <p>¡Hola! Soy una caja de color verde.</p>
+    </div>
+
+    <div id="amarillo">
+    	<p>¡Hola! Soy una caja de color amarillo.</p>
+    </div>
+
+     <button id="cambiaColor">Cambiar azul por naranja</button>
+
+         <!--<ul id="nav">
+            <li><a class="menu" href="#">Opcion del menu 1</a></li>
+            <li><a class="menu" href="#">Opcion del menu 2</a></li>
+            <li><a class="menu" href="#">Opcion del menu 3</a></li>
+            <li><a class="menu" href="#">Opcion del menu 4</a></li>
+            <li><a class="menu" href="#">Opcion del menu 5</a></li>
+        </ul>-->
+
+	</body>
+</html>

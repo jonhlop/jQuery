@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejemplo de ejercicio</title>
+
+		<script src="js/jquery-1.10.2.min.js"></script>
+
+
+		<script type="text/javascript">
+
+			// Estoy indicando a jQuery que me seleccione los elementos que encuentre dentro de mi HTML que tengan como id azul.
+
+			$('#azul');
+			
+			//Estoy guardando en una variable una selección mediante jQuery que está escogiendo el div con ID azul dentro de mi estructura HTML. Al guardar en variable, me ahorro el volver a ejecutar la búsqueda entre todos los elementos de mi HTML, optimizando recursos.
+
+			var $miSeleccion = $('#azul');
+
+
+			//Para comprobar que estoy haciendo bien la selección, saco el resultado de la variable por consola de navegador.
+
+			console.log($miSeleccion);
+
+			// Para poder seleccionar elementos, tengo todos los selectores CSS disponibles que soporte el navegador, más los que añade jQuery. http://api.jquery.com/category/selectors/
+
+
+		</script>
+
+
+	</head>
+
+	<body>
+	<h1>Hola usuarios de video2brain</h1>
+	<div id="azul"></div>
+	<div id="rojo"></div>
+	<div id="verde"></div>
+	<div id="amarillo"></div>
+	</body>
+</html>
